@@ -1,0 +1,23 @@
+dist: xenial
+language: python
+python:
+  - "3.3"
+  - "3.4"
+  - "3.6"
+  - "3.7"
+
+services:
+  - postgresql
+
+env:
+  - POSTGRES_DB=test
+  - POSTGRES_PASSWORD=
+
+install:
+  - pip install cookiecutter
+script:
+  - rm -rf api-starter/
+  - cookiecutter . --no-input
+  - pip install -r api-starter/requirements.txt
+  - cd api-starter/
+  - pytest

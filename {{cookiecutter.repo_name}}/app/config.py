@@ -20,7 +20,7 @@ TEST_POSTGRES = {
 class Config:
     ERROR_404_HELP = False
 
-    SECRET_KEY = os.getenv('APP_SECRET', '79ec24ba5a8dc15a8f5ccb847e555b3a66936314ef531e565fa1973544026cac')
+    SECRET_KEY = os.getenv('APP_SECRET', 'secret key')
 
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://{user}:{pw}@{host}:{port}/{db}'.format(**POSTGRES)
     SQLALCHEMY_TRACK_MODIFICATIONS = False
