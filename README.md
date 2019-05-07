@@ -1,6 +1,6 @@
 # Cookiecutter Flask API Starter
 
-This is a minimal Falsk project for bootstraping APIs. It makes of [Flask-Restplus](https://github.com/noirbizarre/flask-restplus) 
+This is a minimal Flask project for bootstraping APIs. It makes of [Flask-Restplus](https://github.com/noirbizarre/flask-restplus) 
 and [Flask-Sqlalchemy](https://github.com/pallets/flask-sqlalchemy) to set up a production ready API. [Gevent](https://github.com/gevent/gevent)
 has also been added to handle IO based operations.
 
