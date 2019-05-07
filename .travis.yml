@@ -11,6 +11,8 @@ services:
 env:
   - POSTGRES_DB=test POSTGRES_PASSWORD=
 
+before_install:
+  - psql -c 'create database travis_ci_test;' -U postgres
 install:
   - pip install cookiecutter
 script:
