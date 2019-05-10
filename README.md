@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mobidevke/cookiecutter-flask-api-starter.svg?branch=master)](https://travis-ci.org/mobidevke/cookiecutter-flask-api-starter)
+
 # Cookiecutter Flask API Starter
 
 This is a minimal Flask project for bootstraping APIs. It makes of [Flask-Restplus](https://github.com/noirbizarre/flask-restplus) 
